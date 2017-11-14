@@ -1,4 +1,4 @@
-package com.example;
+package com.example.sort;
 
 import static com.example.Utils.t2String;
 
