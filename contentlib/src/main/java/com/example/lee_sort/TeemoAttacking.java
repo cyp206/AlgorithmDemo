@@ -1,4 +1,4 @@
-package com.example.sort;
+package com.example.lee_sort;
 
 /**
  * Created by y on 2017/11/15.
@@ -35,7 +35,7 @@ public class TeemoAttacking {
         for (int i = 1; i < timeSeries.length; i++) {
             //比较两个数是否相差duration -1 yes 的话取前后差值，no  取duration
             //replace
-//            lastingTime = lastingTime + Math.min(timeSeries[i] - timeSeries[i - 1], duration);
+            // lastingTime = lastingTime + Math.min(timeSeries[i] - timeSeries[i - 1], duration);
             lastingTime = lastingTime + ((timeSeries[i] - timeSeries[i - 1] <= (duration - 1)) ? timeSeries[i] - timeSeries[i - 1] : duration);
         }
         return lastingTime;

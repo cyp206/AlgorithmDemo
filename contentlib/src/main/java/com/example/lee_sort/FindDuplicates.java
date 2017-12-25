@@ -1,4 +1,4 @@
-package com.example.sort;
+package com.example.lee_sort;
 
 import java.util.ArrayList;
 import java.util.List;
