@@ -108,7 +108,7 @@ public class QuickSort {
 
 
         }
-        System.out.println("QuickSort resutl:" + t2String(input));
+        System.out.println("QuickSort result:" + t2String(input));
     }
 
 

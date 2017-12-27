@@ -22,7 +22,31 @@ public class InsertSort {
      * 1 2 3 4 8
      */
 
-    public static void srot(int[] input) {
+    public static void sort_ver2(int[] input) {
+        //获得用于比较的元素
+        for (int i = 0; i < input.length; i++) {
+            if (i == 0) continue;
+            //进行元素比较
+            for (int j = 0; j < i; j++) {
+                //不是顺位，需要插入位置
+                if (input[j] > input[i]) {
+                    //进行位移
+                    int temp = input[i];
+                    for (int x = i; x > j; x--) {
+                        input[x] = input[x - 1];
+                    }
+                    input[j] = temp;
+                    break;
+                }
+            }
+        }
+
+        System.out.println("InsertSort result:" + t2String(input));
+
+    }
+
+
+    public static void srot_ver1(int[] input) {
 
         for (int i = 1; i < input.length; i++) {
             int temp = -1;
@@ -44,10 +68,9 @@ public class InsertSort {
             }
 
 
-
         }
 
-        System.out.println("InsertSort resutl:" + t2String(input));
+        System.out.println("InsertSort result:" + t2String(input));
 
     }
 

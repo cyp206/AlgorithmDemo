@@ -27,7 +27,7 @@ public class BubbleSort {
             }
         }
 
-        System.out.println("bubblesort resutl:" + t2String(input));
+        System.out.println("bubblesort result:" + t2String(input));
 
 
     }
